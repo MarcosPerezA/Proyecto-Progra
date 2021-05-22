@@ -1,0 +1,45 @@
+﻿<Window x:Class="bd_embutidos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bd_embutidos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="-25,-25,-44,-21" HorizontalAlignment="Left" Width="861">
+        <DataGrid Name="gridalumnos" HorizontalAlignment="Left" Height="162" ItemsSource="{Binding}" VerticalAlignment="Top" Width="276" Margin="40,72,0,0"/>
+        <Button Name="btnbuscar" Content="Buscar SQL SERVER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="352,72,0,0" Height="28" Click="btnbuscar_Click"/>
+        <Button Content="Insertar SQL SERVER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="352,150,0,0" Height="40" Click="Button_Click"/>
+        <TextBox Name="Textboxid" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Ingresa ID" VerticalAlignment="Top" Width="120" Margin="520,72,0,0"/>
+        <TextBox x:Name="Textboxnom" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Ingresa Nombre" VerticalAlignment="Top" Width="120" Margin="520,117,0,0"/>
+        <TextBox x:Name="Textboxcant" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Ingresa Cantidad" VerticalAlignment="Top" Width="120" Margin="520,161,0,0"/>
+        <TextBox x:Name="Textboxprec" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Ingresa precio" VerticalAlignment="Top" Width="120" Margin="520,206,0,0"/>
+        <TextBox x:Name="Textboxfech" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="Ingresa Fecha" VerticalAlignment="Top" Width="120" Margin="520,251,0,0"/>
+        <Button Content="borrar SQL SERVER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="352,217,0,0" Height="28" Click="Button_Click_3"/>
+        <Button Content="Actualizar SQL SERVER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="125" Margin="352,260,0,0" Click="Button_Click_2"/>
+        <Button Content="Buscar ID SQLSERVER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="18,287,0,0" Click="Button_Click_1" Height="25"/>
+        <TextBox HorizontalAlignment="Left" Name="txtid" Height="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Margin="142,287,0,0"/>
+        <TextBox HorizontalAlignment="Left"  Height="23" TextWrapping="Wrap" Name="txtnom" Text="" VerticalAlignment="Top" Width="104" Margin="142,312,0,0"/>
+        <TextBox HorizontalAlignment="Left" Name="txtcan" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Margin="142,335,0,0"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtpre" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Margin="142,365,0,0"/>
+        <TextBox HorizontalAlignment="Left" x:Name="txtfe" Height="25" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104" Margin="142,395,0,-1"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="308,335,0,0" VerticalAlignment="Top" Width="76" Height="23"/>
+        <Label Content="Cantidad" HorizontalAlignment="Left" Margin="40,335,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Label Content="Precio" HorizontalAlignment="Left" Margin="40,365,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Label Content="Fecha" HorizontalAlignment="Left" Margin="40,395,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <Button Content="Buscar MYSQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Margin="658,71,0,0" Height="41" Click="Button_Click_4"/>
+        <Button Content="Insertar MYSQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Margin="658,117,0,0" Height="38" Click="Button_Click_5"/>
+        <Button Content="Borrar MYSQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Margin="658,161,0,0" Height="34" Click="Button_Click_7"/>
+        <Button Content="Actualizar MYSQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="146" Margin="658,206,0,0" Height="28" Click="Button_Click_8"/>
+        <Button Content="Buscar ID MYSQL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="251,287,0,0" Click="Button_Click_6"/>
+        <Button Content="Buscar Por Nombre" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="18,317,0,0" Click="Button_Click_9"/>
+        <Button Content="Buscar Por Cantidad" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="18,340,0,0" Click="Button_Click_10"/>
+        <Button Content="Buscar Por Precio" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="18,366,0,0" Click="Button_Click_11"/>
+        <Button Content="Buscar por fecha" HorizontalAlignment="Left" VerticalAlignment="Top" Width="119" Margin="18,398,0,0" Click="Button_Click_12"/>
+        <Button Content="Buscar por nombre" HorizontalAlignment="Left" Margin="251,315,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click_13"/>
+        <Button Content="Buscar por cantida" HorizontalAlignment="Left" Margin="251,340,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click_14"/>
+        <Button Content="Buscar por precio" HorizontalAlignment="Left" Margin="251,363,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click_15"/>
+        <Button Content="Buscar por fecha" HorizontalAlignment="Left" Margin="251,398,0,0" VerticalAlignment="Top" Width="113" Height="20" Click="Button_Click_16"/>
+
+    </Grid>
+</Window>
